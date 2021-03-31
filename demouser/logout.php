@@ -1,0 +1,13 @@
+<?php
+session_start();
+unset($_SESSION["id"]);
+unset($_SESSION["name"]);
+unset($_SESSION["login_sess"]);
+unset($_SESSION["login_id"]);
+unset($_SESSION["login_name"]);
+unset($_SESSION["login_email"]);
+$_SESSION['img_path'];
+session_unset();
+session_destroy();
+header("Location:login.php");
+?>
